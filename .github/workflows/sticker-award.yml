@@ -19,6 +19,6 @@ jobs:
         run: |
           # Replace 'your-username' with your GitHub username
           # Replace 'your-sticker-URL' with the URL of the sticker you want to use
-          curl -X POST "https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.pull_request.number }}/comments" -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" -d "{\"body\": \"Congratulations on your PR! Here's your sticker: [![Sticker](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIvI9pGp4Adko4of0biUmHWlgB85-e50HrWg1wcEsHF_doyv9WtxUtb-wYPayHcHuPwg0&usqp=CAU)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIvI9pGp4Adko4of0biUmHWlgB85-e50HrWg1wcEsHF_doyv9WtxUtb-wYPayHcHuPwg0&usqp=CAU)\"}"
+          curl -X POST "https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.pull_request.number }}/comments" -H "Authorization: Bearer ${{ secrets.TOKEN_KEY}}" -d "{\"body\": \"Congratulations on your PR! Here's your sticker: [![Sticker](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIvI9pGp4Adko4of0biUmHWlgB85-e50HrWg1wcEsHF_doyv9WtxUtb-wYPayHcHuPwg0&usqp=CAU)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIvI9pGp4Adko4of0biUmHWlgB85-e50HrWg1wcEsHF_doyv9WtxUtb-wYPayHcHuPwg0&usqp=CAU)\"}"
 
 
